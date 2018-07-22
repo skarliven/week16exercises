@@ -1,0 +1,48 @@
+ <!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Vue Router</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <!-- Custom CSS -->
+    <link href="https://fonts.googleapis.com/css?family=Marck+Script" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+  </head>
+  <body>
+    <div id="app">
+      <div id="header" class="bg-dark text-white">
+        <h1>Choose a link below</h1>
+        <ul>
+          <li><router-link to="/one">Link One</router-link></li>
+          <li><router-link to="/two">Link Two</router-link></li>
+          <li><router-link to="/three">Link Three</router-link></li>
+      
+        </ul>
+      </div>
+      <div id="content">
+        <transition mode="out-in" name="slide-fade">
+          <router-view></router-view>
+        </transition>
+      </div>
+      <div id="footer" class ="bg-dark text-center text-white">
+        <p class="p-5">Thanks for visiting my site!</p>
+      </div>
+</div>
+
+<!-- scripts -->
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<!-- popper -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<!-- Bootstrap -->
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+<!-- Vue -->
+<script src="https://cdn.jsdelivr.net/npm/vue"></script>
+<!--  Vue router-->
+<script src="https://unpkg.com/vue-router/dist/vue-router.js"></script>
+
+<!-- Custom jQuery and JavaScript -->
+<script src="js/main.js"></script>
+</body>
+</html>
